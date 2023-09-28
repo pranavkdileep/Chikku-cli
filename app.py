@@ -1,6 +1,6 @@
 import requests
 
-url = "https://server-fuie.onrender.com/message?prompt="
+url = "https://pranavkd-gpt.hf.space/message?prompt="
 
 def generate(prompt):
     response = requests.get(url + prompt)
