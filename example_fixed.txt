@@ -1,0 +1,11 @@
+```python
+import requests
+
+def download_file(url, destination):
+    response = requests.get(url)
+    with open(destination, "wb") as f:
+        f.write(response.content)
+
+if __name__ == "__main__":
+    download_file("https://www.example.com/file.zip", "file.zip")
+```
