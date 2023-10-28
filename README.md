@@ -1,38 +1,55 @@
-# pkd-chikku-cli
+# Chikku
 
+Chikku is a CLI coding assistant that helps you generate and fix code using natural language prompts. Chikku is powered by state-of-the-art AI models and supports various programming languages and frameworks.
 
-# Chikku - Python Code Assistant
+## Installation
 
-## Introduction
+Chikku requires Python 3.6 or higher and pip to run. It is available on Windows, Mac, and Linux operating systems.
 
-Chikku is a Python code assistant that helps you with various coding tasks and provides assistance with Python code snippets. This document provides an overview of some of the available commands and how to use them.
-
-## Commands
-
-### Command 1: Fix Code
-
-This command is used to fix code issues. You can provide a code snippet and specify what you want to fix. For example:
+To install Chikku, simply run the following command in your terminal:
 
 ```bash
-python3 app.py --fix "without using urllib.request rewrite the code" --filename example.txt
+pip install chikku
 ```
 
-This command will attempt to fix the code in the "example.txt" file by rewriting it without using `urllib.request`.
-
-### Command 2: Prompt for Code
-
-Use this command to prompt Chikku to provide Python code that accomplishes a specific task. For example, to request code for downloading a file from a URL:
+To update Chikku to the latest version, run:
 
 ```bash
-python3 app.py prompt "write python code that downloads a file from a URL" --filename example.txt
+pip install chikku --upgrade
 ```
 
-Chikku will generate Python code that downloads a file from a URL and save it in the "example.txt" file.
+## Usage
 
-### Output
+To chat with Chikku bot assistant, run:
 
-When running the Chikku application with Python, you will receive output based on the commands you provided. The output will depend on the specific task you requested or the code you asked to be fixed.
+```bash
+chikku
+```
 
-## Conclusion
+To generate code files from natural language prompts, run:
 
-Chikku is a valuable Python code assistant that can help you write code, fix issues, and automate coding tasks. Explore the various commands to make your coding experience more efficient and productive.
+```bash
+chikku --prompt "Your Prompt" --filename Your_File_Name_With_Extension
+```
+
+For example, to generate a Python file that prints "Hello World", run:
+
+```bash
+chikku --prompt "print hello world in python" --filename hello.py
+```
+
+To fix any code errors or bugs, run:
+
+```bash
+chikku --fix "Error_To_Fix" --filename Name_of_the_File_To_Fix_With_Extension
+```
+
+For example, to fix a syntax error in a Python file, run:
+
+```bash
+chikku --fix "SyntaxError: invalid syntax" --filename hello.py
+```
+
+## Feedback
+
+If you have any feedback, suggestions, or issues with Chikku, please feel free to contact me at chikku@techypranav.eu.org. I would love to hear from you and improve Chikku. Thank you for using Chikku! 😊
